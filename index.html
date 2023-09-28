@@ -17,12 +17,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -104,55 +99,75 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-examples">
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene1_sun.png" height="100%">
+              <a href="./static/images/scene1_sun.png" class="progressive replace">
+                <img src="./static/images/scene1_sun Small.jpeg" class="preview" height="100%"  alt="image" />
+              </a>
+              <!-- <img class="image" id="0_gen0" src="./static/images/scene1_sun.png" height="100%"> -->
             </div>
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene1_rain.png" height="100%">
-            </div>
-          </div>
-
-          <div class="item item-examples">
-            <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene3_day.png" height="100%">
-            </div>
-            <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene3_night.png" height="100%">
+              <a href="./static/images/scene1_rain.png" class="progressive replace">
+                <img src="./static/images/scene1_rain Small.jpeg" class="preview" height="100%" alt="image" />
+              </a>
+              <!-- <img class="image" id="0_gen0" src="./static/images/scene1_rain.png" height="100%"> -->
             </div>
           </div>
 
           <div class="item item-examples">
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene2_sun.png" height="100%">
+              <a href="./static/images/scene3_day.png" class="progressive replace">
+                <img src="./static/images/scene3_day Small.jpeg" class="preview" height="100%"  alt="image" />
+              </a>
+              <!-- <img class="image" id="0_gen0" src="./static/images/scene3_day.png" height="100%"> -->
             </div>
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene2_rain.png" height="100%">
+              <a href="./static/images/scene3_night.png" class="progressive replace">
+                <img src="./static/images/scene3_night Small.jpeg" class="preview" height="100%"  alt="image" />
+              </a>
+              <!-- <img class="image" id="0_gen0" src="./static/images/scene3_night.png" height="100%"> -->
+            </div>
+          </div>
+
+          <div class="item item-examples">
+            <div class="item item-expcol"> 
+              <img class="image" id="0_gen0"
+              src="./static/images/scene2_sun.png" height="100%" loading="lazy">
+            </div>
+            <div class="item item-expcol">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene2_rain.png" height="100%" loading="lazy">
             </div>
           </div>
 
           <div class="item item-examples">
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene5_day.png" height="100%">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene5_day.png" height="100%" loading="lazy">
             </div>
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene5_night.png" height="100%">
-            </div>
-          </div>
-
-          <div class="item item-examples">
-            <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene4_sun.png" height="100%">
-            </div>
-            <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene4_rain.png" height="100%">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene5_night.png" height="100%" loading="lazy">
             </div>
           </div>
 
           <div class="item item-examples">
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene6_day.png" height="100%">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene4_sun.png" height="100%" loading="lazy">
             </div>
             <div class="item item-expcol">
-              <img class="image" id="0_gen0" src="./static/images/scene6_night.png" height="100%">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene4_rain.png" height="100%" loading="lazy">
+            </div>
+          </div>
+
+          <div class="item item-examples">
+            <div class="item item-expcol">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene6_day.png" height="100%" loading="lazy">
+            </div>
+            <div class="item item-expcol">
+              <img class="image" id="0_gen0"
+              src="./static/images/scene6_night.png" height="100%" loading="lazy">
             </div>
           </div>
         </div>
@@ -286,7 +301,8 @@
             </p>
           </div>
           <div class="content has-text-centered">
-            <img class="image" id="0_gen0" src="./static/images/main_results.png" height="100%">
+            <img class="image" id="0_gen0"
+            src="./static/images/main_results.png" height="100%" loading="lazy">
           </div>
           <br />
           <!--/ main results. -->
@@ -309,7 +325,8 @@
             </p>
           </div>
           <div class="content has-text-centered">
-            <img class="center" id="downstream" src="./static/images/downstream.png" width="75%">
+            <img class="center" id="downstream"
+            src="./static/images/downstream.png" width="75%" loading="lazy">
           </div>
         </div>
       </div>
@@ -336,6 +353,7 @@
 
   <!-- Image Slider Javascripts -->
   <!--=================Functions==========================-->
+  <script src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js" async></script>
   <script src="./static/js/juxtapose.js"></script>
 
   <!-- <script>
