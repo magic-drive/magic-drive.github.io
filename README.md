@@ -1,4 +1,3 @@
 # MagicDrive
 
-This is the repository that contains source code for the [MagicDrive website](https://magic-drive.github.io).
-
+Our project website is moved to [https://gaoruiyuan.com/magicdrive/](https://gaoruiyuan.com/magicdrive/).
